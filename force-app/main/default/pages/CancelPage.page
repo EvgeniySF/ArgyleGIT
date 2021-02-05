@@ -1,0 +1,55 @@
+<apex:page showHeader="false" controller="PaymentFailedController"> 
+      
+        
+    <html>
+<head> 
+<style>
+    body {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+    background-position: center bottom;
+    //background-repeat:repeat;
+    //background-size:contain;
+    //background-position:center;
+    background-image: url('https://eventscdn.argyleforum.com/wp-content/uploads/2019/07/fwl-purple-bg-2000x.jpg');
+    }
+    
+    .full-height {
+    height: 100%; 
+    width: 700px;
+    margin: 0 auto;
+    background: white;
+    padding-bottom: 90px;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="full-height" >
+    <div>
+        
+<div>
+    <img title="Banner1" src="https://dlpbmt6cqrdgu.cloudfront.net/wp-content/uploads/2020/07/FutureWork-Event-Page-Header-1600x369-1.png" style="width: 100%;"/>
+</div>
+    <div style=" padding: 20px; padding-bottom: 0px;">
+       
+    <p style="font-style:italic; color:red;">
+      Something went wrong. Please try to <a style="color: blue; text-decoration: underline;" href="{!$Setup.Stripe_Integration__c.Public_Site_Url__c}">register</a> again. {!$Setup.Stripe_Integration__c.Public_Site_Url__c}
+    </p>
+        <br/> 
+    </div>
+         
+         
+    </div>    
+    </div>
+
+    
+</body>
+</html>
+    
+     
+</apex:page>

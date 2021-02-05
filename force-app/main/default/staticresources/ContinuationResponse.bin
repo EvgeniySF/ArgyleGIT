@@ -1,0 +1,32 @@
+{
+  "id": "cs_test_PuqPc7ube0maYjNZNI22Zaoh0tsoPXx3B2eUGfz0q478qxneLkj4avp7",
+  "object": "checkout.session",
+  "allow_promotion_codes": null,
+  "amount_subtotal": 9900,
+  "amount_total": 9900,
+  "billing_address_collection": null,
+  "cancel_url": "http://nixdev-eventregistrationtest.cs125.force.com/CancelPage",
+  "client_reference_id": null,
+  "currency": "usd",
+  "customer": null,
+  "customer_email": "zhenyamotalygin@gmail.com",
+  "livemode": false,
+  "locale": null,
+  "metadata": {
+  },
+  "mode": "payment",
+  "payment_intent": "pi_1HMDcQIAJJKm4vZ49m0BvLsB",
+  "payment_method_types": [
+    "card"
+  ],
+  "setup_intent": null,
+  "shipping": null,
+  "shipping_address_collection": null,
+  "submit_type": null,
+  "subscription": null,
+  "success_url": "http://nixdev-eventregistrationtest.cs125.force.com/SuccessPage?id=2ee996b7f59497db2c86bbf2316425b6",
+  "total_details": {
+    "amount_discount": 0,
+    "amount_tax": 0
+  }
+}

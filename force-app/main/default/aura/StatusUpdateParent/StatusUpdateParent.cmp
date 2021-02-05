@@ -1,0 +1,5 @@
+<aura:component implements="force:lightningQuickAction,force:hasRecordId,flexipage:availableForAllPageTypes">
+     
+    <c:updateStatus recordId="{!v.recordId}" oncloseparentauracomponent="{!c.closeQuickAction}"/>
+    
+</aura:component>

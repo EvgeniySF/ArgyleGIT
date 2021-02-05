@@ -1,0 +1,167 @@
+<apex:page controller="SuccessPageController" showHeader="false" action="{!updateStatus}" > 
+    <style>
+        body {
+        height: 100%;
+        margin: 0;
+        font-size: 16px;
+        background: rgb(34, 136, 205);
+        
+        
+        }
+        
+        .full-height {
+        height: 100%; 
+        width: 700px;
+        margin: 0 auto;
+        background: white;
+        padding-bottom: 90px;  
+        }
+        
+        #headerMain {
+        width: 700px;
+        height: 7rem;
+        margin:0px auto;
+        z-index:0;
+        }
+        
+        #header {
+        width: 700px;
+        height: 7rem;
+        background: #040a2a;
+        position: fixed;
+        z-index: 9999; 
+        }
+        
+    </style>
+    
+    
+    <html>
+        <head>  
+            <!-- Google Tag Manager -->
+            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WQDM6PR');</script>
+            <!-- End Google Tag Manager -->
+            
+        </head>
+        <body>
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQDM6PR"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+                <!-- End Google Tag Manager (noscript) -->
+                    
+                    <div class="full-height" >
+                        <div>
+                        
+                        
+                        
+                        <div id="headerMain">
+                            <div id="header" >
+                                
+                                <table>
+                                <tr>
+                                <td style="padding-left: 40px;">
+                                    <a href="https://argyleforum.com">
+                                        <img src="https://dlpbmt6cqrdgu.cloudfront.net/wp-content/uploads/2020/02/cfo-live-logo.png" alt="CFO Live Virtual 2020 November" style="max-width: 15rem; margin-top: 1.5rem;"/> 
+                                            </a>
+                                        </td>
+                                        <td style="padding-left: 20px; vertical-align:bottom;text-align:center;">
+                                            <span style="font-size: 1.2rem; color: white; font-weight: bold; text-transform: uppercase;">November 04 - 05, 2020</span>
+                                            </td>
+                                            </tr>
+                                            </table>
+                                            
+                                            </div>
+                                            </div>
+                                            
+                                            
+                                            
+                                            
+                                            <div style=" padding: 20px; padding-bottom: 0px;">
+                                                
+                                                <p>
+                                                Thank you for registering for <b>CFO Live</b>. Please bookmark this page for future reference as it contains your event information.
+                                                    </p>
+                                                    You will receive your registration confirmation via email momentarily. 
+                                                    </div>
+                                                    
+                                                    
+                                                    <div style=" padding-left: 20px; ">
+                                                    <p>
+                                                    <b>EVENT INFORMATION</b>:
+                                                    </p>
+                                                    </div>
+                                                    
+                                                    <table style="width: 70%; margin-left: 20px; font-size: 16px;">
+                                                    <tr>
+                                                    <td style="text-align: left; width: 100%;">
+                                                    Digital Event: <b>CFO Live</b> 
+                                                    </td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td style="text-align: left; width: 100%;"> 
+                                                    Date: <b>November 4 – 5, 2020</b>
+                                                    </td> 
+                                                    </tr> 
+                                                    </table>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    <div style=" padding-left: 20px; ">
+                                                    <p>
+                                                    <b>REGISTRATION DETAILS</b>:
+                                                    </p>
+                                                    </div>
+                                                    
+                                                    
+                                                    <table style="width: 70%; margin-left: 20px; font-size: 16px;">
+                                                    <tr>
+                                                    <td style="text-align: left; width: 100%;">
+                                                    Registered Attendee: <b>{!eventParticipant.Zapier_First_Name__c} {!eventParticipant.Zapier_Last_Name__c}</b>
+                                                    </td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td style="text-align: left; width: 100%;"> 
+                                                    Pass Type: <b>{!accessTypeCustom}</b>
+                                                    </td> 
+                                                    </tr> 
+                                                    </table>
+                                                    
+                                                    
+                                                    <div style="padding: 20px;"> 
+                                                    We look forward to seeing you there. 
+                                                    </div>
+                                                    
+                                                    
+                                                    <table style="padding: 20px; font-size: 18px;"> 
+                                                    <tr>
+                                                    <td style="text-align: left; padding-bottom: 10px;"> 
+                                                    Sincerely,
+                                                    </td>
+                                                    
+                                                    </tr>
+                                                    <tr>
+                                                    <td style="text-align: left; padding-bottom: 10px;">  
+                                                    &mdash; The CFO Live Team 
+                                                    </td>
+                                                    
+                                                    </tr>
+                                                    
+                                                    </table>
+                                                    
+                                                    
+                                                    <p style="font-style: italic; font-size: 12px; padding-left: 20px;">
+                                                    Need some assistance? Contact us at <a style="color: blue; text-decoration: underline;" href="campaignmanagement@argyleforum.com">campaignmanagement@argyleforum.com</a>
+                                                    </p>
+                                                    
+                                                    </div>    
+                                                    </div>
+                                                    
+                                                    
+                                                    </body>
+                                                    </html>
+                                                    
+                                                    </apex:page>

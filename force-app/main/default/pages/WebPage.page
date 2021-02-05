@@ -1,0 +1,4 @@
+<apex:page >
+<apex:iframe src="https://www.google.com" scrolling="true" id="theIframe"/>
+    
+</apex:page>

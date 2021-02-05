@@ -1,0 +1,82 @@
+<apex:page showHeader="false" controller="PaymentFailedController"> 
+      
+        
+    <html>
+<head> 
+<style>
+    body {
+    height: 100%;
+    margin: 0;
+    font-size: 16px; 
+    background: rgb(34, 136, 205);
+    }
+    
+    .full-height {
+    height: 100%; 
+    width: 700px;
+    margin: 0 auto;
+    background: white;
+    padding-bottom: 90px;
+    }
+    
+    
+      #headerMain {
+  width: 700px;
+  height: 7rem;
+  margin:0px auto;
+  z-index:0;
+}
+ 
+#header {
+  width: 700px;
+  height: 7rem;
+  background: #cfcece;
+  position: fixed;
+  z-index: 9999; 
+}
+</style>
+
+</head>
+<body>
+
+<div class="full-height" >
+    <div>
+        
+
+<div id="headerMain">
+            <div id="header" >
+                 
+                           <table>
+                        <tr> 
+                            <td style="padding-left: 40px;">
+                             
+                                <a href="https://argyleforum.com">
+                                    <img src="https://dlpbmt6cqrdgu.cloudfront.net/wp-content/uploads/2020/05/Argyle_Logo_png-scaled.png" alt="CMO Virtual 2020 December" style="max-width: 10rem; margin-top: 1.5rem;"/> 
+              </a>
+                            </td>
+                            <td style="padding-left: 20px; vertical-align:bottom; text-align:center; padding-bottom: 4%;">
+                                <span style="font-size: 1.1rem; color: black; font-weight: bold; text-transform: uppercase;">December 02 - 03, 2020</span>
+                            </td>
+                        </tr>
+                    </table>
+                     
+             </div>
+        </div>
+    <div style=" padding: 20px; padding-bottom: 0px;">
+       
+    <p style="font-style:italic; color:red;">
+      Something went wrong. Please try to <a style="color: blue; text-decoration: underline;" href="{!registrationPageUrl}">register</a> again. 
+    </p>
+        <br/> 
+    </div>
+         <apex:outputText > </apex:outputText>
+         
+    </div>    
+    </div>
+
+    
+</body>
+</html>
+    
+     
+</apex:page>

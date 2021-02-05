@@ -1,0 +1,28 @@
+<apex:page >
+    <link rel="stylesheet" href="css/intlTelInput.css"/>
+    <script src="js/intlTelInput.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+var input = document.querySelector("#phone");
+intlTelInput(input, {
+    initialCountry: "auto",
+    geoIpLookup: function(success, failure) {
+        $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+            var countryCode = (resp && resp.country) ? resp.country : "";
+            success(countryCode);
+        });
+    },
+    utilsScript: "js/utils.js"
+});
+</script>
+
+    
+    
+    <input type="tel" id="phone"/>
+
+    
+    
+    
+    
+    
+</apex:page>
