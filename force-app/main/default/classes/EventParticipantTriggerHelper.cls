@@ -256,6 +256,7 @@ for(Event_Participant__c participant : newParticipants)
 participant.Processed_with_duplicate_prevention__c = true;
 }
 }
+Started Working on the new featureffs
 */
     
     public void handleBeforeInsert(List<Event_Participant__c> newParticipants)
